@@ -68,7 +68,7 @@ export const GameProvider: React.FC<GameProviderProps> = ({ children }) => {
 
   // Connect to the Socket.io server
   useEffect(() => {
-    const newSocket = io('http://localhost:3001');
+    const newSocket = io('https://strategixchess-99c6.onrender.com/');
     setSocket(newSocket);
 
     return () => {
