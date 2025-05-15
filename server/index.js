@@ -7,7 +7,7 @@ import { nanoid } from 'nanoid';
 
 const app = express();
 app.use(cors({
-  origin: 'https://strategixchess.onrender.com/',
+  origin: 'https://strategixchess.onrender.com',
   methods: ['GET', 'POST'],
   credentials: true
 }));
@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 const server = createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: 'https://strategixchess.onrender.com/',
+    origin: 'https://strategixchess.onrender.com',
     methods: ['GET', 'POST'],
     credentials: true
   },
